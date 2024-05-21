@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Overview</title>
+  <style>
+    /* General body styling */
+    body {
+      background-color: #f0f8ff;
+      animation: backgroundColorChange 5s ease-in-out infinite alternate-reverse;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Styling for the animated box */
+    .box {
+      height: 60vh;
+      width: 60vw;
+      max-height: 500px;
+      max-width: 500px;
+      overflow: hidden;
+      animation: boxAnimation 3s ease-in-out infinite alternate-reverse;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Paragraph styling */
+    p {
+      animation: textColorChange 3s ease-in-out infinite alternate-reverse;
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+
+    /* Keyframes for the box animation */
+    @keyframes boxAnimation {
+      0% {
+        height: 60vh;
+        width: 60vw;
+        border: 10px dashed #006400;
+        background-color: #98fb98;
+      }
+      50% {
+        border: 10px dotted #8a2be2;
+        background-color: #db7093;
+      }
+      100% {
+        border: 10px dashed #ffd700;
+        background-color: #daa520;
+        height: 40vh;
+        width: 40vw;
+      }
+    }
+
+    /* Keyframes for the background color change */
+    @keyframes backgroundColorChange {
+      0% {
+        background-color: #add8e6;
+      }
+      50% {
+        background-color: #f4a460;
+      }
+      100% {
+        background-color: #4682b4;
+      }
+    }
+
+    /* Keyframes for the paragraph text color change */
+    @keyframes textColorChange {
+      0% {
+        color: #ff4500;
+      }
+      50% {
+        color: #00008b;
+      }
+      100% {
+        color: #006400;
+      }
+    }
+
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .box {
+        height: 70vh;
+        width: 80vw;
+      }
+    }
+
+    @media (max-width: 480px) {
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <p>Welcome to our project overview! This project aims to revolutionize the way we approach web development, bringing innovative design and user-friendly interfaces to the forefront. Our team is dedicated to creating responsive, aesthetically pleasing, and highly functional websites that meet the diverse needs of users. Join us as we explore the exciting world of modern web solutions!</p>
+  </div>
+</body>
+
+</html>
